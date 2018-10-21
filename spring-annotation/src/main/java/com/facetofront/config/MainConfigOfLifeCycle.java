@@ -31,6 +31,33 @@ import com.facetofront.domain.Car;
  *          postProcessBeforeInitialization；在初始化之前工作
  *          postProcessAfterInitialization：在初始化之后工作
  *          
+ *      spring底层对BeanPostProcessor的使用
+ *      
+ *      ApplicationContextAwareProcessor帮我们组件里面注入ioc容器，比如：com.facetofront.domain.Dog组件
+ *       
+ *       只要实现ApplicationContextAwareProcessor的接口
+ *       public class Dog implements ApplicationContextAwareProcessor {
+ *            
+ *             
+ *            private ApplicationContext applicationContext;
+ *             
+ *            public void setApplicationContext(ApplicationContext applicationContext){
+ *                this.applicationContext=applicationContext;
+ *            }
+ *       
+ *       }
+ *       
+ *      BeanValidationPostProcessor  数据校验   
+ *      对象创建完之后，给javabean赋值的时候，进行校验
+ *      
+ *      InitDestroyAnnotationBeanPostProcessor
+ *      
+ *      处理PostConstruct 和PreDestroy    com.facetofront.domain.Dog中的注解，就是因为这个
+ *      
+ *      AutowiredAnnotationBeanPostProcessor
+ *      
+ *      bean赋值，注入其他组件  @Autowired生命周期注解功能   @Async(异步方法),XXXXXX 
+ *      
  *         
  * 构造（对象创建）
  *     单实例：在容器启动的时候创建对象     

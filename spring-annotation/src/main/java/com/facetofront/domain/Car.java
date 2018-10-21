@@ -1,5 +1,8 @@
 package com.facetofront.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car {
 	
 	
