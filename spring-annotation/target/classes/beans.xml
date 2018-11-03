@@ -17,5 +17,6 @@
      <!-- <context:component-scan base-package="com.facetofront"></context:component-scan> -->
      
     <!--  <context:property-placeholder location="propertyvalue.properties"/> -->
-     
+     <!-- 开启基于注解版的切面功能       此次使用配置类的形式-->
+     <!-- <aop:aspectj-autoproxy></aop:aspectj-autoproxy> -->
 </beans>
