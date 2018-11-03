@@ -1,0 +1,24 @@
+组件添加：
+@ComponentScan
+@Bean
+@Configuration
+@Component
+@Service
+@Controller
+@Repository
+@Conditional   ********springboot底层
+@Primary
+@Lazy
+@Scope
+@Import        ********springboot底层
+@ImportSelector
+@工厂模式
+组件赋值：
+@Value
+@Autowired(@Qualifier  @Resource  @Inject)
+@PropertySource
+@PropertySources
+@Profile 
+
+
+
